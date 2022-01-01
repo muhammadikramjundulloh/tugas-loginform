@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>login</title>
+    </head>
+    <body>
+        <form action="#">
+            
+            <h1>login</h1>
+            <div>
+                <label for="username">username</label>
+                <input type="text" id="username">
+            </div>
+
+            <div>
+                <label for="pass">Password</label>
+                <input type="password" id="pass">
+            </div>
+            <button type="submit" onclick="gass()">login</button>
+        </form>
+
+        <script src="niih.js">
+
+function gass(){
+    var uname = document.getElementById('username').value
+    var pass = document.getElementById('pass').value
+
+    console.log(uname);
+    console.log(pass);
+
+    if (uname == 'ikramj' && pass =="jundulloh"){
+        alert("loogin sukses")
+        
+        
+    }else if (uname == ""&& pass ==""){
+        alert('tolong isi password dan usernamenya')
+    } else{
+        alert('username / password salah')
+    }
+}
+        </script>
+    </body>
+</html>
